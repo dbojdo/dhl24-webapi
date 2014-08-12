@@ -18,7 +18,7 @@ use Webit\Dhl24\Model\ServiceDefinitionProduct;
  */
 class ServiceDefinitionProductTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetTypes()
+    public function testGetProducts()
     {
         $products = ServiceDefinitionProduct::getProducts();
         $this->assertInternalType('array', $products);

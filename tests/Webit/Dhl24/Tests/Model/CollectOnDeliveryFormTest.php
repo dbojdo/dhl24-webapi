@@ -18,7 +18,7 @@ use Webit\Dhl24\Model\CollectOnDeliveryForm;
  */
 class CollectOnDeliveryFormTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetTypes()
+    public function testGetForms()
     {
         $forms = CollectOnDeliveryForm::getForms();
         $this->assertInternalType('array', $forms);

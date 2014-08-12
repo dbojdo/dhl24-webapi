@@ -18,7 +18,7 @@ use Webit\Dhl24\Model\PaymentMethod;
  */
 class PaymentMethodTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetTypes()
+    public function testGetMethods()
     {
         $methods = PaymentMethod::getMethods();
         $this->assertInternalType('array', $methods);
