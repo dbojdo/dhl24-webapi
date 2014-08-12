@@ -1,6 +1,6 @@
 <?php
 /**
- * File PieceDefinitionTypeTest.php
+ * File PayerTypeTest.php
  * 
  * @author Daniel Bojdo <daniel.bojdo@web-it.eu>
  * @copyright 2014 Web-IT
@@ -8,19 +8,19 @@
  */
 namespace Webit\Dhl24\Tests\Model;
 
-use Webit\Dhl24\Model\PieceDefintionType;
+use Webit\Dhl24\Model\PayerType;
 
 /**
  * 
- * Class PieceDefinitionTypeTest
+ * Class PayerTypeTest
  * @package Webit\Dhl24\Tests\Model
  *
  */
-class PieceDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class PayerTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetTypes()
     {
-        $types = PieceDefintionType::getTypes();
+        $types = PayerType::getTypes();
         $this->assertInternalType('array', $types);
     }
 }

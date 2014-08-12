@@ -8,7 +8,6 @@
  */
 namespace Webit\Dhl24\Tests\Model;
 
-use Webit\Dhl24\Model\AuthData;
 use Webit\Dhl24\Model\PieceDefinition;
 
 /**

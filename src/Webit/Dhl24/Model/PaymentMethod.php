@@ -1,6 +1,6 @@
 <?php
 /**
- * File PieceDefintionType.php
+ * File PaymentMethod.php
  *
  * @author Daniel Bojdo <daniel.bojdo@web-it.eu>
  * @copyright 2014 Web-IT
@@ -10,15 +10,14 @@ namespace Webit\Dhl24\Model;
 
 /**
  *
- * Class PieceDefintionType
+ * Class PaymentMethod
  * @package Webit\Dhl24\Model
- * @see https://dhl24.com.pl/webapi/doc/definicjaPaczki.html
+ * @see https://dhl24.com.pl/webapi/doc/paymentData.html
  */
-final class PieceDefintionType
+final class PaymentMethod
 {
-    const ENVELOPE = 'ENVELOPE';
-    const PACKAGE  = 'PACKAGE';
-    const PALLET   = 'PALLET';
+    const CASH = 'CASH';
+    const BANK_TRANSFER  = 'BANK_TRANSFER';
     
     private function __construct() {}
     
@@ -26,7 +25,7 @@ final class PieceDefintionType
      * 
      * @return array
      */
-    public static function getTypes()
+    public static function getMethods()
     {
         $refClass = new \ReflectionClass(get_class());
         $constants = $refClass->getConstants();
