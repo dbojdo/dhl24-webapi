@@ -8,8 +8,8 @@
  */
 namespace Webit\Dhl24\Tests\Model;
 
-use Webit\Dhl24\Model\ShipmentEvent;
 use Webit\Dhl24\Model\ShipmentBasicData;
+
 /**
  * 
  * Class ShipmentBasicDataTest
